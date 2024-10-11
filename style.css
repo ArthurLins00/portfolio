@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+}
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+body{
+    background-color: rgb(97, 93, 93);
+    height: 100vh;
+    margin: 0;
+    padding-top: 200px;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.btn-linkedin button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 0;
+    border-radius: 30px;
+    transition: .2s;
+}
+
+h2.titulo{
+    color: white;
+    font-size: 34px;
+    text-align: center;
+}
+h2.titulo span{
+    color: rgb(0, 0, 0);
+}
+button:hover, .btn-enviar input:hover{
+    box-shadow: 0px 0px 4px rgb(255, 255, 255);
+    transform: scale(1.075);
+}
+.texto-menor{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.637);
+}
+.cargo{
+    color: black;
+    font-weight: 600;
+}
+
+
+header{
+    padding: 20px 4%;
+    border: 2px solid gray;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(54, 54, 54);
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color: rgba(255, 255, 255, 0.604);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: white;
+    transform: scale(1.075);
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+
+section.topo{
+    padding: 40px 4%;
+}
+section.topo .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.topo h1{
+    color: white;
+    font-size: 34px;
+    line-height: 40px;
+}
+.topo h1 span{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 40px;
+}
+.topo .txt-topo p{
+    color: rgb(255, 255, 255);
+    margin: 40px 0;
+}
+.txt-topo ul{
+    color: rgb(255, 255, 255);
+    list-style: none;
+}
+.txt-topo ul span{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.topo .img-topo img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+
+section.experiencias{
+    padding: 40px 4%;
+}
+section.experiencias .flex{
+    gap: 60px;
+}
+.experiencias .experiencias-box{
+    color: white;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+    justify-content: space-between;
+    align-items: center;
+}
+.experiencias .experiencias-box:hover{
+    transform: scale(1.075);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.53);
+}
+.experiencias .experiencias-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+    color: black;
+}
+.experiencias .experiencias-box p{
+    color: rgb(255, 255, 255);
+    text-align: justify;
+}
+.experiencias .experiencias-box ul{
+    color: white;
+    text-align: justify;
+}
+.experiencias .experiencias-box .icon1 span{
+    font-size: 70px;
+    color: blue;
+}
+.experiencias .experiencias-box .icon2 span{
+    font-size: 70px;
+    color: yellow;
+}
+.experiencias .experiencias-box .icon3 span{
+    font-size: 70px;
+    color: green;
+}
+
+
+section.sobre{
+    padding: 20px 4%;
+}
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+.sobre .txt-sobre{
+    color: white;
+}
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.sobre .txt-sobre h2 span{
+    color: rgb(0, 0, 0);
+    display: block;
+}
+.sobre .txt-sobre p{
+    margin: 30px 0;
+    text-align: justify;
+    
+}
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: .2s;
+    border-color: black;
+    margin: 0 5px;
+}
+
+
+section.portfolio{
+    padding: 80px 4%;
+    
+}
+section.portfolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position:relative;
+}
+.img-port2{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 50% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position:relative;
+}
+.img-port3{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 45% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position:relative;
+}
+.img-port:hover{
+    background-position: 100% 100%;
+}
+.img-port2:hover{
+    background-position: 50% 0%;
+}
+.img-port3:hover{
+    background-position: 45% 0%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(23, 18, 18, 0.446);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+}
+.overlay:hover{
+    opacity: 1;
+}
+
+
+
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.072);
+}
+footer .flex{
+    justify-content: space-between;
+
+}
+footer .line-footer{
+    padding: 0 0;
+    
+}
+.borda{
+    border-top: 2px solid rgb(0, 0, 0);
+}
+footer .line-footer p{
+    display: inline;
+    justify-content: space-between;
+    align-items: end;
+}
+footer .line-footer p a{
+    color: white;
+}
+
+
+
+
+section.contatos{
+    padding: 40px 4%;
+}
+section.contatos .flex{
+    gap: 60px;
+}
+.contatos .contatos-box{
+    color: white;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+    justify-content: space-between;
+    align-items: center;
+}
+.contatos .contatos-box:hover{
+    transform: scale(1.075);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.53);
+}
+.contatos .contatos-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+    color: black;
+}
+.contatos .contatos-box p{
+    color: rgb(255, 255, 255);
+    text-align: justify;
+}
